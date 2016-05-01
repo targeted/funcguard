@@ -1,6 +1,8 @@
-# Function guard for Python3
+# Function guard for Python 3
 
 ## Rationale and thoughts:
+
+See http://requires-thinking.blogspot.com/2016/05/python-function-guards.html
 
 ## Samples:
 
