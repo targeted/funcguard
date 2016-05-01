@@ -326,6 +326,10 @@ def guard(func, module = None): # the main decorator function
 
     func_guard.__wrapped__ = func
 
+    # mark the proxy as having been produced by this decorator
+
+    func_guard.__producing_decorator__ = guard
+
     # the guard expression is attached
 
     func_guard.__guard_expr__ = _get_guard_expr(func_name, argspec)
